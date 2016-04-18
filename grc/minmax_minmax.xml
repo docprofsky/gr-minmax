@@ -1,0 +1,26 @@
+<block>
+  <name>Minmax</name>
+  <key>minmax_minmax</key>
+  <category>MINMAX</category>
+  <import>import minmax</import>
+  <make>minmax.minmax($vlen)</make>
+  <param>
+    <name>Vec Length</name>
+    <key>vlen</key>
+    <value>1</value>
+    <type>int</type>
+  </param>
+  <check>$vlen &gt; 0</check>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <vlen>$vlen</vlen>
+    <nports>1</nports>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>$vlen</vlen>
+    <nports>2</nports>
+  </source>
+</block>
